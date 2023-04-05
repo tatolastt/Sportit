@@ -62,11 +62,23 @@ header{
 
 .navegacion nav ul li {
     list-style: none;
+    transition: all 0.3s ease;
 }
+
+.navegacion nav ul li:hover{
+    scale: 1.3;
+}
+
+
 
 .navegacion nav ul li a{
     color: black;
     text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.navegacion nav ul li a:hover{
+    color: #232C50;
 }
 
 
@@ -80,6 +92,12 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: all 0.3s ease;
+}
+
+.boton-contacto:hover{
+    background-color: #9a62c6;
+    scale: 1.1;
 }
 
 .boton-contacto a{
@@ -105,7 +123,7 @@ header{
 
 /* Main */
 
-main{
+.inicio{
     padding: 10rem 0;
     display: flex;
     justify-content: space-between;
@@ -141,7 +159,7 @@ main{
 }
 
 @media (max-width: 480px) {
-    main{
+    .inicio{
         flex-direction: column;
         align-items: center;
     }
@@ -391,6 +409,12 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: all 0.3s ease;
+}
+
+.boton-go-f-it:hover{
+    background-color: #d6d4d4;
+    scale: 1.1;
 }
 
 .boton-go-f-it a {
@@ -459,6 +483,12 @@ footer{
     gap: 10px;
 }
 
+.redes img{
+    transition: all 0.3s ease;
+}
+.redes img:hover{
+    scale: 1.5;
+}
 .footer-nav ul {
     display: flex;
     justify-content: space-between;
@@ -469,14 +499,27 @@ footer{
 
 .footer-nav ul li {
     list-style: none;
+    transition: all 0.3s ease;
 }
+
+.footer-nav ul li:hover{
+    scale: 1.3;
+}
+
 
 .footer-nav ul li a{
     color: white;
     text-decoration: none;
     font-weight: 400;
     font-size: 1.6rem;
+    transition: all 0.3s ease;
 }
+
+.footer-nav ul li a:hover{
+    color: #afafaf;
+}
+
+
 
 .navegacion-footer{
     display: flex;
@@ -488,7 +531,13 @@ footer{
     padding: 10px;
     border-radius: 50px;
     border: none;
+    transition: all 0.3s ease;
+}
 
+/* transition para que el input se agrende al cliclearlo */
+.footer-input input:focus{
+    scale: 1.05;
+    
 }
 
 .footer-input button{
@@ -500,6 +549,12 @@ footer{
     color: white;
     font-weight: 500;
     font-size: 1.3rem;
+    transition: all 0.3s ease;
+}
+
+.footer-input button:hover{
+    background-color: #9a62c6;
+    scale: 1.1;
 }
 
 .footer-input p{
