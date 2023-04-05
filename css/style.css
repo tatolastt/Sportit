@@ -1,0 +1,534 @@
+/* APLICAR EL BORDER BOX A TODO PARA MEJORAR LOS TAMANOS */
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    /*1 rem = 10px*/
+}
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+
+/* Globales */
+
+body{
+    background: #F5F5F5;
+    font-family: 'Be Vietnam Pro', sans-serif;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    /*Sacar separacion por defecto de las imagenes*/
+}
+
+.centrar{
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+
+.contenedor {
+    max-width: 100rem;
+    margin: 0 auto;
+    /*Para centrar*/
+}
+
+
+
+/* Header */
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4rem 0;
+
+}
+
+.boton-hamburgesa{
+    display: none;
+}
+
+.navegacion nav ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;   
+    gap: 3rem;
+}
+
+.navegacion nav ul li {
+    list-style: none;
+}
+
+.navegacion nav ul li a{
+    color: black;
+    text-decoration: none;
+}
+
+
+.boton-contacto{
+    background-color: #8B48BF;
+    box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
+    border-radius: 5rem;
+    padding: 12px;
+    width: 134px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.boton-contacto a{
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.6rem;
+}
+
+@media (max-width: 480px) {
+    .navegacion {
+        display: none;
+    }
+
+    header .boton-contacto {
+        display: none;
+    }
+
+    .boton-hamburgesa {
+        display: inline-block;
+    }
+}
+
+/* Main */
+
+main{
+    padding: 10rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.imagen-principal img{
+    width: 90%;
+}
+
+.informacion-inicial{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: end;
+    text-align: right;
+    width: 300px;
+}
+
+.informacion-inicial h1{
+    font-size: 5rem;
+    font-weight: 700;
+    line-height: 4.8rem;
+    color: #232C50;
+}
+
+.informacion-inicial p{
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    padding-bottom: 1.5rem;
+    color:black;
+}
+
+@media (max-width: 480px) {
+    main{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Section Pregunta */
+
+.section-pregunta{
+    background-color: #8B48BF;
+}
+
+.pregunta-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5rem;
+}
+
+.pregunta-info h2{
+    font-weight: 700;
+    font-size: 3.6rem;
+    color:white;
+    width: 400px;
+    line-height: 5rem;
+}
+
+.pregunta-info p{
+    font-weight: 500;
+    font-size: 16px;
+    width: 400px;
+    color: white;
+    line-height: 2.8rem;
+}
+
+@media (max-width: 480px) {
+    .section-pregunta{
+        background-color: #3CDDF3;
+    }
+
+    .pregunta-info{
+        flex-direction: column;
+        align-items:flex-start;
+    }
+}
+
+/* Section motivos */
+
+.dos-columnas{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5rem;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.numero{
+    background: #8B48BF;
+    border-radius: 30px;
+    color:white;
+    width: 70px;
+    height: 40px;
+    font-size: 1.6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+    top: 65px;
+    right: 90px;
+    
+}
+
+.motivo{
+    display: flex;
+    flex-direction: column;
+    gap:1px;
+    align-items: start;
+}
+
+.motivo h3{
+    font-weight: 700;
+    font-size: 1.6rem;
+    color: #323851;
+    line-height: 2.4rem;
+    
+}
+
+.motivo-info{
+    color: #B3B2B7;
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    width: 400px;
+}
+
+
+@media (max-width: 480px) {
+    .dos-columnas{
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    
+    .numero{
+        top: 70px;
+        right: 180px;
+        width: 70px;
+        height: 55px;
+        font-size: 1.6rem;
+    }
+
+    .motivo {
+        align-items: center;
+    }
+
+    .motivo h3{
+        font-size: 1.5rem;
+    }
+
+    .violeta-mobile{
+        background: rgba(139, 72, 191, 0.3);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50px 0px 0px 50px;
+        width: 40rem;
+    }
+    .motivo-info{
+        width: 90%;
+    }
+
+}
+
+
+
+
+/* section Best Of the Month */
+
+.best-of-month{
+    background-color: white;
+    padding-bottom: 10rem;
+    
+}
+
+.best-of-month h2{
+    font-weight: 700;
+    font-size: 3.9rem;
+    color: #242E53;
+    text-align: center;
+    padding: 7rem 0;
+}
+
+.jugadores{
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+    align-items: center;
+    max-width: 140rem;
+    margin: 0 auto;
+    /*Para centrar*/
+    
+}
+
+.jugador{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    background-color: #FAFAFA;
+    padding-top: -5px;
+}
+
+.jugador img{
+    position: relative;
+    bottom: 30px;
+}
+
+.jugador h3{
+    font-weight: 700;
+    font-size: 1.6rem;
+    color: #242E53;
+    line-height: 2.4rem;
+}
+
+.jugador p{
+    font-weight: 500;
+    font-size: 1.6rem;
+    color: #B9B9C1;
+    line-height: 2.4rem;
+    padding-bottom: 1.5rem;
+}
+
+@media (max-width: 480px) {
+    .sanyo{
+        display: none;
+    }
+
+    .navarro{
+        display: none
+    }
+
+    .jugadores{
+        width: 90%;
+    }
+}
+
+/* Section Busca tu equipo */
+
+.busca-tu-equipo{
+    background-color: #8B48BF;
+    padding: 5rem 0;
+}
+
+.busca-flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5rem;
+    max-width: 110rem;
+    margin: 0 auto;
+}
+
+.busca-flex h2{
+    color: white;
+    font-weight: 700;
+    font-size: 4rem;
+    line-height: 4.6rem;
+    width: 400px;
+}
+
+.boton-go-f-it{
+    background-color: white;
+    box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
+    border-radius: 5rem;
+    padding: 12px;
+    width: 134px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.boton-go-f-it a {
+    color: #8B48BF;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.6rem;
+}
+
+@media (max-width: 480px) {
+    .busca-tu-equipo{
+        background: #3CDDF3;
+    }
+   .busca-flex{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .busca-flex h2{
+        width: 300px;
+        text-align: center;
+    }
+
+    .boton-go-f-it{
+        background-color:#232C50;
+    }
+
+    .boton-go-f-it a {
+        color:white;
+    }
+
+    
+
+
+}
+
+
+/* footer */
+
+footer{
+    background-color: #1E1E26;
+}
+
+.footer-flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5rem;
+    max-width: 110rem;
+    margin: 0 auto;
+    padding: 5rem 0;
+}
+
+.footer-logos{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5rem;
+}
+
+.redes{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-nav ul {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.footer-nav ul li {
+    list-style: none;
+}
+
+.footer-nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 1.6rem;
+}
+
+.navegacion-footer{
+    display: flex;
+    justify-content: space-between;
+    gap:160px;
+}
+
+.footer-input input{
+    padding: 10px;
+    border-radius: 50px;
+    border: none;
+
+}
+
+.footer-input button{
+    background-color: #8B48BF;
+    width: 70px;
+    border-radius: 50px;
+    border: none;
+    padding: 10px;
+    color: white;
+    font-weight: 500;
+    font-size: 1.3rem;
+}
+
+.footer-input p{
+    color:white;
+    position: relative;
+    top: 50px;
+    left: 120px;
+}
+
+
+@media (max-width: 480px) {
+    footer{
+        padding-bottom:50px;
+    }
+    .footer-flex{
+        flex-direction: column-reverse;
+    }
+
+    .footer-logos{
+        flex-direction: column-reverse;
+    }
+
+    .redes{
+        gap:50px;
+    }
+
+    .footer-input p{
+        left: 40px;
+        top:560px;
+    }
+
+    .navegacion-footer {
+        gap: 50px;
+    }
+}
+
+
