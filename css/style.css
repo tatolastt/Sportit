@@ -189,11 +189,14 @@ main{
 
 /* Section motivos */
 
+
 .dos-columnas{
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 5rem;
+    max-width: 90rem;
+
 }
 
 .center{
@@ -216,6 +219,8 @@ main{
     position: relative;
     top: 65px;
     right: 90px;
+
+    
     
 }
 
@@ -501,7 +506,7 @@ footer{
     color:white;
     position: relative;
     top: 50px;
-    left: 120px;
+    left: 30px;
 }
 
 
@@ -522,8 +527,8 @@ footer{
     }
 
     .footer-input p{
-        left: 40px;
-        top:560px;
+        left: 3 0px;
+        top:400px;
     }
 
     .navegacion-footer {
